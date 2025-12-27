@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Student Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo-box">
+      <img src="images/logo.jpg" alt="Logo">
+    </div>
+      
+    <h2>Welcome!</h2>
+
+    <p style="text-align:center;">
+      Click this button to fill in your personal profile.
+    </p>
+
+    <form action="form.html" method="get" style="max-width:300px;margin:0 auto;">
+      <button type="submit">Go to Profile Form</button>
+    </form>
+    
+    <br>
+    
+    <p style="text-align:center;">
+      Click this button to view all profiles.
+    </p>  
+    <form action="ProfileServlet" method="get" style="max-width:300px;margin:0 auto;">
+        <input type="hidden" name="action" value="viewAll">
+        <button type="submit">View All Profiles</button>
+    </form>
+  </div>
+
+</body>
+</html>
